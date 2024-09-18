@@ -3,6 +3,19 @@ const express = require('express')
 const app = express()
 const port = 4000
 
+const githubData ={
+    "login":"AkashYadav",
+    "id":22331123,
+    "node_id":"MCSDFSDFSDF",
+    "avatar_url":"ABCD",
+    "gravatar_id":"",
+}
+
+app.get('/github',(req,res)=>{
+res.json(githubData)
+})
+
+
 app.get('/', (req, res) => {
     res.send('Hello World Akash Yadav!')
 })
